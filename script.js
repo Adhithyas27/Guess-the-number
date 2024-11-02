@@ -1,3 +1,5 @@
+document.querySelector("#span3").innerHTML=0;
+var temp=document.querySelector("#span3").innerHTML
 var number=Math.floor(Math.random()*20)+1
 document.querySelector("#bt1").addEventListener("click",function(){
     number=Math.floor(Math.random()*20)+1
@@ -44,8 +46,12 @@ document.querySelector("#bt2").addEventListener("click",function(){
     document.querySelector("#span1").innerHTML='Correct value....'
     document.querySelector('#id2').innerHTML="Number found";
     document.querySelector(".container").classList.add("win")
-    document.querySelector("#span3").innerHTML=n1;
     document.querySelector(".qmark").innerHTML=" "+number+" ";
+    var temp=n1;
+       if(temp<n1){
+       document.querySelector("#span3").innerHTML=n1;
+       temp=n1;
+       }
     
    }
 })
