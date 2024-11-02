@@ -12,7 +12,7 @@ document.querySelector("#bt1").addEventListener("click",function(){
     document.querySelector('#id2').innerHTML='Guess the number';
     document.querySelector(".container").classList.remove("win")
     document.querySelector(".qmark").innerHTML="?";
-    console.log(number);
+   
     
 
 })
@@ -55,5 +55,5 @@ document.querySelector("#bt2").addEventListener("click",function(){
     
    }
 })
-console.log(number);
+
 
