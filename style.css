@@ -1,0 +1,132 @@
+html{
+    
+    color:white;
+    font-family:"Press Start 2P", serif;;
+    
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:1fr 1fr 1fr;
+    gap:10px;
+    height:100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    background-color: #222;
+    
+}
+.lower{
+    display: flex;
+    flex:2;
+}
+.middle{
+    display: flex;
+    grid-column: span 3;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+}
+.items.lc{
+    display: flex;
+    grid-column: span 3;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.items.lc>div{
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.right{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+#bt1{
+    display: flex;
+    background-color: #222;
+    color: white;
+    margin:10px;
+    border-radius: 10px;
+    font-family: "Press Start 2P", serif;
+    font-size: 40px;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+}
+#bt1:hover,#bt2:hover{
+    background-color: white;
+    color:#222;
+}
+#id2{
+    display: flex;
+    justify-content: flex-end!important; /* Pushes content to the bottom */
+    align-items: center !important;
+    text-align: center;
+    padding-top: 30%;
+}
+#id3{
+    display: flex;
+    text-align: center;
+    padding-bottom: 30%;
+    margin-left: 20px;
+}
+#input{
+    display: flex;
+    font-family:"Press Start 2P", serif;;
+    font-size:40px;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:100px;
+    text-align: center;
+}
+.items.lower.left{
+    margin:0px;
+}
+label{
+    font-size:30px;
+    text-align:center;
+    margin-top: 100px;
+}
+.items.lower.left  button{
+    margin-left:100px;
+    
+}
+#bt2{
+
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    border-radius: 10px;
+    color: white;
+    padding:10px;
+    margin-left:10px;
+    margin-right: 800px;
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-family: "Press Start 2P", serif;
+}
+hr{
+    background-color:white;
+    height: 10%;
+    width:50%;
+}
+.gameover{
+    background-color: rgb(94, 0, 0);
+}
+.win{
+    background-color: rgb(2, 71, 2);
+
+}
+.invisible{
+    display: none;
+}
+h3{
+    background-color: #222;
+}
